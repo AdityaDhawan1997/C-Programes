@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+    char one[10], two[10];
+    int cmp;
+    printf("ENTER THE STRING\n");
+    scanf("%s",&one);
+    strcpy(two, one);
+    strrev(one);
+    cmp = strcmp(one, two);
+    
+    if(cmp == 0)
+        printf("STRING IS A PALINDROME");
+    else
+        printf("STRING IS NOT A PALINDROME");
+}
